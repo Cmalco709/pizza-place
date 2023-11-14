@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Project</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+div.container {
+  height: 200vh;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 1), 0 5px 14px 0 rgba(0, 0, 0, 1);
+  
+}
+
+#p-first {
+  color: white;
+  font-size: 1.2vw;
+  margin-left:4%;
+  
+}
+
+img#banner-logo {
+  width: 70vw;
+}
+
+a {
+  font-size: 1.3vw;
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  line-height: 7vh;
+}
+
+a:hover {
+    color: yellow;
+}
+
+div#red-bar {
+  position: relative;
+  width: 70vw;
+  height: 50px;
+  background: linear-gradient(black, crimson);
+  margin-top: -10px;
+}
+
+/* input#name-input::placeholder {
+} */
+h1 {
+  color: maroon;
+  font-size: 3rem;
+  font-family: sans-serif, "Arial";
+  margin-left: 30px;
+}
+
+p {
+  margin-left: 30px;
+  font-size: 1.3em;
+}
+
+#first {
+  margin-left:15%;
+}
+
+#red-bar-first {
+  margin-top: -12%;
+  width: 14vw;
+  height: 5vh;
+  background-color: #B31519;
+  
+}
+
+#red-bar-sec {
+  position:absolute;
+  top: 86vh;
+  left: 70vw;
+  width: 180px;
+  height: 25px;
+  background-color: #B31519;
+}
+
+#but-sub {
+  margin-left: 30%;
+  font-size: 1.4em;
+}
+#but-sub1 {
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 1.4em;
+}
+
+article {
+  height: 70vh;
+  width: 45%;
+  background-color: #f2e8b5;
+  border-radius: 10px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 4%;
+  padding: 1%;
+  border: 2px solid grey
+}
+aside {
+  height: 70vh;
+  width: 45%;
+  background-color: #f2e8b5;
+  border-radius: 10px;
+  float: right;
+  margin-top: 2%;
+  margin-right: 4%;
+  padding: 4%;
+  border: 2px solid grey
+}
+
+
+label,input {
+  width: 50%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+}
+
+select{
+  margin-bottom: 5px;
+  float: right;
+  width: 200px;
+}
+
+label {
+  float: left;
+  font-size: 1vw
+    
+}
+
+input {
+  float: right;
+}
+
+#dish-input{
+  clear: both;
+  margin-top: -25px;
+}
+
+#dish-label{
+  clear: both;
+  margin-top:5px;
+  font-size: 1vw
+}
+
+#dine-input{
+  width: 20%;
+}
+
+#dine-label{
+  width: 80%;
+  font-size: 1vw
+}
+
+#mail-label {
+  width: 95%;
+  float: right;
+  font-size: 1vw
+}
+
+#mail-input {
+  float: left;
+  width: 3%;
+  margin-left: -0.5px;
+  margin-top: -1.2px;
+  
+}
+
+#name-input {
+  margin-top: 5%;
+}
+#name-label {
+  margin-top: 5%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+  <img id="banner-logo" src="">
+  <div id="red-bar">
+    <a id = "first" href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Home</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Menu</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Directions</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Coupons</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Orders</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Catering</a>
+    <a href="https://codepen.io/Ryan-Morales/pen/dywrVaW?editors=1100">Reviews</a>
+  </div>
+  <h1>Customer Survey</h1>
+  <p>Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. All participants are automatically entered into a monthly drawing to receive a Red Ball Express PizzaFest containing two large pizzas, a 2-liter soda, and a side order of chicken wings. Check your e-mail inbox for contest results.</p>
+
+  <p>Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, ever.</p>
+
+  <p>Required values are marked by an asterisk (*)</p>
+  <form id="customer-information">
+
+
+    
+    <article>
+
+      <div id="red-bar-first"><p id="p-first">Customer Information</p></div>
+      
+      <!--   Name     -->
+      <label for="name-input" id="name-label">Name*</label>
+      <input type="text" placeholder="Enter Name" id="name-input">
+
+      <!--   Street     -->
+      <label for="street-input" id="street-label">Address</label>
+      <input type="text" placeholder="Enter Address" id="street-input">
+
+      <!--   City     -->
+      <label for="city-input" id="city-label">City</label>
+      <input type="text" placeholder="Enter City" id="city-input">
+
+      <!--   State     -->
+      <label for="state-input" id="state-label">State</label>
+      <input type="text" placeholder="Enter State" id="state-input">
+
+      <!--   Postal Code     -->
+      <label for="code-input" id="code-label">Postal Code</label>
+      <input type="text" placeholder="Enter Postal Code" id="code-input">
+
+      <!--   Phone Number     -->
+      <label for="number-input" id="number-label">Phone Number</label>
+      <input type="text" placeholder="Enter Phone Number" id="number-input">
+
+      <!--   Phone Number     -->
+      <label for="email-input" id="email-label">Email*</label>
+      <input type="text" placeholder="Enter Email" id="email-input">
+
+      <!--   Heard     -->
+      <label for="heard-input" id="heard-label">Where did you hear about us?
+        (select all that apply)</label>
+      <select id="heard-input" size="5">
+        <option value="internet">Internet</option>
+        <option value="magazine">Magazine</option>
+        <option value="newspaper">Newspaper</option>
+        <option value="word-of-mouth">Word of Mouth</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!--   Phone Number     -->
+      <label for="dish-input" id="dish-label">Enter your favorite dish</label>
+      <input type="text" placeholder="Enter Dish" id="dish-input">
+
+      <!--   Phone Number     -->
+      <label for="dine-input" id="dine-label">How many times do you dine out per month?</label>
+      <input type="number" min="0" value="1" id="dine-input">
+
+      <!--   Phone Number     -->
+      <label for="mail-input" id="mail-label">Add me to your mailing list for great coupons and specials!</label>
+      <input id="mail-input" type="checkbox">
+    </article>
+    <aside></aside>
+
+    <button id="but-sub" type="button">Submit My Survey</button>
+
+<button id="but-sub1" type="button">Cancel</button>
+    
+  </form>
+  <!--   <img id="test-image" src="" width=100 height=100> -->
+
+</div> <!-- end container class -->
+
+<!-- <input type="number" id="dine-out-count" min="0" value="0"> -->
+
+
+
+
+    <script>const testImage = document.getElementById("test-image");
+const bannerLogo = document.getElementById("banner-logo");
+const customerInfoForm = document.getElementById("customer-information");
+
+let hamburgerSrc =
+  "https://drive.google.com/uc?id=1CnkfA7eH9vAEcuHo-eSbTh0QQdnpIcQb";
+// let redX = "https://drive.google.com/uc?id=1DhvGl41dsjs4X2VE4skPXMj6tRzDVHOB";
+let greenCheck =
+  "https://drive.google.com/uc?id=1LDcwQ0vWPkphHPOMDOzOZ8ei3P5hEunv";
+let bannerSrc =
+  "https://drive.google.com/uc?id=1XVrJasLndnCWu2aB1AbxBrHP4CxtZ7YP";
+let checkerBoard =
+  "https://drive.google.com/uc?id=1xTkMkhjX350bTk1q0hZXm6RwQKKK0j4T";
+
+document.body.style.backgroundImage = `url(${checkerBoard})`;
+// testImage.src = redX;
+bannerLogo.src = bannerSrc;
+
+customerInfoForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+});</script>
+</body>
+</html>
